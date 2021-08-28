@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #222;
+  font-family: 'Public Sans', sans-serif;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.header {
+  background-color: #3e64ff;
+  margin-bottom: 20px;
+}
+.logo img {
+  height: 125px;
+}
+.crockery {
+  width: 90%;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%); /*to center image */
+  background-image: url('images/bonechina.jpg');
+  background-size: 100% 100%;
+  box-shadow: 1px 2px 10px #111;
+  animation: slider 10s infinite linear;
+}
+@keyframes slider {
+  0% {
+    background-image: url('images/bonechina.jpg');
+  }
+  25% {
+    background-image: url('images/porcelain.jpg');
+  }
+  50% {
+    background-image: url('images/eathenware.jpg');
+  }
+  75% {
+    background-image: url('images/dinner set.jpg');
+  }
+}
+hr {
+  border-top: 1px dotted #eee;
+  width: 90%;
+  margin: 0 auto;
+}
+section {
+  padding: 350px 9%;
+}
+
+.home .content {
+  text-align: center;
+  padding-top: 0px;
+  margin: 2rem auto;
+  max-width: 70rem;
+}
+
+.home .content h3 {
+  color: #fff;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.home .content h3 span {
+  color: #3e64ff;
+  text-transform: capitalize;
+}
+
+.heading {
+  text-align: center;
+  padding-bottom: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.heading span {
+  color: #3e64ff;
+  text-transform: uppercase;
+}
+.category {
+  position: absolute;
+  top: 500px;
+}
+.category .box-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+  gap: 1.5rem;
+}
+
+.category .box-container .box {
+  border-radius: 0.5rem;
+  background: #333;
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.category .box-container .box h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.category .box-container .box p {
+  font-size: 1.2rem;
+  color: #eee;
+  line-height: 1.8;
+}
+
+.content2 {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  gap: 1.5rem;
+  color: #eee;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: -20px;
+  border: 5px solid gray;
+}
+.heading2 {
+  text-align: center;
+  padding-bottom: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 220px;
+}
+.heading2 span {
+  color: #3e64ff;
+  text-transform: uppercase;
+}
+.items {
+  margin-top: -700px;
+}
+.heading3 {
+  text-align: center;
+  padding-bottom: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.heading3 span {
+  color: #3e64ff;
+  text-transform: uppercase;
+}
+.items .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+}
+
+.items .box-container .box {
+  position: relative;
+  border-radius: 0.5rem;
+  background: #333;
+  padding: 2.5rem;
+  text-align: center;
+}
+footer {
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  background: #3e64ff;
+  margin-top: -250px;
+}
+h2 {
+  text-align: left;
+  padding-bottom: 1rem;
+  color: #111;
+  text-transform: capitalize;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+.address {
+  text-align: left;
+  width: 50%;
+}
+.contactus {
+  text-align: left;
+  width: 50%;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3e64ff;
+}
